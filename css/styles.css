@@ -1,0 +1,65 @@
+.main-content {
+  flex-grow: 1;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  border: 10px solid #000;
+  font-size: 50px;
+  background-color: rgba(255, 217, 0, 0.5);
+} */
+
+
+
+/* elementga position: absolute; o'z o'lchamini saqlab qolmaydi uning o'lchami content vawidth, heighga qarab o'zgaradi*/
+/*  top, right, bottom, left, z-index qiymatlarni bersak ham ularni qabul qiladi*/
+/* .box-absalute {
+ position: absolute;
+right: 0;
+top: 0;
+z-index: -1;
+} */
+
+
+
+.parent {
+  border: 5px solid #000;
+  /* height: 100%; */
+  height: 200px;
+  background-color: rgb(127, 204, 255);
+}
+.child {
+  right: 0;
+  /* Static's child va Relativ's child elementlarimiz o'ng tomondan tomonga taqalib qoladi */
+  top: 50px;
+  /* Static's child va Relativ's child elementlarimiz tepadan 50px joy qoldirib joylashadi */
+  position: absolute;
+  /* Static's child va Relativ's child elementlarimizning positioni*/
+  width: 130px;
+  height: 130px;
+  background-color: rgb(255, 251, 0, 0.8);
+}
+.parent-text {
+  font-size: 40px;
+  line-height: 1.5;
+}
+.parent-relative {
+  position: relative;
+  /* Relative-parent elementimizning positioni */
+}
+
+/* Ota elementi position: statik; bo'lgan elementlarga absalyut  position: absolute; qiymatini bersak va top, right, bottom, left qiymatlarni bersak u element bodyga nisbatan joylashadi*/
+
+/*Ota elementi positioni statikdan boshqa bo'lgan elementlarga absalyut  position: absolute; qiymatini bersak va top, right, bottom, left qiymatlarni bersak u element ota elementiga nispatanga nisbatan joylashadi  */
+
+/* Elementga position qiymatlarini bergandan keyin top, right, bottom, left qiymatlarini % da beradigan bo'lsak u ota element yoki bodiyda shuncha % joy tashlab keyin joylashadi*/
